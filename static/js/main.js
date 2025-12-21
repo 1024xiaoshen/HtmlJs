@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
             .then((data) => {
                 console.log('data', data)
                 const greetMsgEl = document.querySelector('#greet-msg')
-                greetMsgEl.textContent = data.login
+                greetMsgEl.textContent = JSON.stringify(data)
             })
             .catch((error) => {
                 console.error('error', error)
